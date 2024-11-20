@@ -7,7 +7,7 @@ let isStudent = true; // boolean
 let height = 1.60; // number (float)
 let hobby = null; // object
 let favoriteNumber = 7; // number
-let isGraduated; // undefined (явное undefined)
+let isGraduated; // undefined (неявное undefined)
 
 console.log(typeof name + ", " + 
     typeof age + ", " + 
@@ -32,6 +32,4 @@ console.log('*** 3 ***')
 let birthYear = 1992; // Год рождения
 let currentYear = new Date().getFullYear(); // Текущий год
 
-let currentAge = currentYear - birthYear; // Вычисляем возраст
-
-console.log(`Привет, мне ${currentAge} года.`);
+console.log(`Привет, мне ${currentYear - birthYear} года.`);
