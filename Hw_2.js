@@ -10,9 +10,9 @@ console.log('*** 1 ***')
 let number = 7.3
 
 // Округление
-let roundedUp = Math.ceil(number)      // в большую сторону
-let roundedDown = Math.floor(number)     // в меньшую сторону
-let roundedNearest = Math.round(number)    // до ближайшего целого числа
+const roundedUp = Math.ceil(number)      // в большую сторону
+const roundedDown = Math.floor(number)     // в меньшую сторону
+const roundedNearest = Math.round(number)    // до ближайшего целого числа
 
 console.log(`Исходное число: ${number}\nОкругление в большую сторону: ${roundedUp}\nОкругление в меньшую сторону: ${roundedDown}\nОкругление до ближайшего целого числа: ${roundedNearest}`)
 
@@ -21,12 +21,12 @@ console.log('*** 2 ***')
 Наибольшее из них.
 Разницу между ними.*/
 
-let number1 = Math.floor(Math.random() * 101) 
-let number2 = Math.floor(Math.random() * 101) // генерируем случайное число, умножаем на 101, чтобы получить число в диапазоне от 0 до 100 (включительно)
+const number1 = Math.floor(Math.random() * 101) 
+const number2 = Math.floor(Math.random() * 101) // генерируем случайное число, умножаем на 101, чтобы получить число в диапазоне от 0 до 100 (включительно)
 
-let maxNumber = number1 > number2 ? number1 : number2 // ищем наибольшее из них
+const maxNumber = number1 > number2 ? number1 : number2 // ищем наибольшее из них
 
-let difference = Math.abs(number1 - number2) // вычисляем разницу между числами, чтобы результат всегда был положительным
+const difference = Math.abs(number1 - number2) // вычисляем разницу между числами, чтобы результат всегда был положительным
 
 console.log(`Число 1: ${number1}\nЧисло 2: ${number2}\nНаибольшее число: ${maxNumber}\nРазница между числами: ${difference}`)
 
@@ -37,16 +37,16 @@ console.log('*** 3 ***')
 Квадратный корень из второго числа.
 Выведите результаты на экран.*/
 
-let num1 = 4
-let num2 = 3
+const num1 = 4
+const num2 = 3
 
-let sum = num1 + num2       // сумма
-let product = num1 * num2   // произведение
-let quotient = num1 / num2  // частное
+const sum = num1 + num2       // сумма
+const product = num1 * num2   // произведение
+const quotient = num1 / num2  // частное
 
-let power = Math.pow(num1, 2)    // возведение во вторую степень
+const power = Math.pow(num1, 2)    // возведение во вторую степень
 
-let squareRoot = Math.sqrt(num2) // квадратный корень из второго числа
+const squareRoot = Math.sqrt(num2) // квадратный корень из второго числа
 
 console.log(`Сумма чисел: ${sum}\nПроизведение: ${product}\nЧастное: ${quotient}\nВозведение первого числа во вторую степень: ${power}\nКвадратный корень из второго числа: ${squareRoot}`)
 
@@ -58,22 +58,22 @@ console.log('*** 4 ***')
 Извлекает слово "JavaScript" и выводит его.
 Убирает пробелы в начале и конце строки, если они есть.*/
 
-let str = "Hello, JavaScript! "
+const str = "Hello, JavaScript! "
 
 console.log(`Длина строки: ${str.length}`)  // длина строки
 
-let upperCaseStr = str.toUpperCase()    // верхний регистр
-let lowerCaseStr = str.toLowerCase()    // нижний регистр
+const upperCaseStr = str.toUpperCase()    // верхний регистр
+const lowerCaseStr = str.toLowerCase()    // нижний регистр
 
 console.log(`Верхний регистр: ${upperCaseStr}\nНижний регистр: ${lowerCaseStr}`)
 
-let containsJava = str.includes("Java") // // проверяем, содержится ли в строке слово "Java"
+const containsJava = str.includes("Java") // // проверяем, содержится ли в строке слово "Java"
 console.log(`Содержится ли "Java" в строке?: ${containsJava}`)
 
-let extractedWord = str.slice(7, 17) // извлекаем слово "JavaScript"
+const extractedWord = str.slice(7, 17) // извлекаем слово "JavaScript"
 console.log(`Извлечённое слово: ${extractedWord}`)
 
-let trimmedStr = str.trim() // убираем пробелы в начале и в конце строки
+const trimmedStr = str.trim() // убираем пробелы в начале и в конце строки
 console.log(`Строка без пробелов в начале и в конце: "${trimmedStr}"`)
 
 console.log('*** 5 ***')
@@ -86,21 +86,21 @@ console.log('*** 5 ***')
 День недели.
 Изменяет год на следующий, а месяц на январь. Выведите изменённую дату.*/
 
-let currentDate = new Date()
+const currentDate = new Date()
 
-let year = currentDate.getFullYear()    // год
+const year = currentDate.getFullYear()    // год
 console.log(`Год: ${year}`)
 
-let month = currentDate.getMonth() + 1 // // месяц
+const month = currentDate.getMonth() + 1 // // месяц
 console.log(`Месяц: ${month}`)
 
 
-let dayOfMonth = currentDate.getDate()  // день месяца
+const dayOfMonth = currentDate.getDate()  // день месяца
 console.log(`День месяца: ${dayOfMonth}`)
 
-let dayOfWeek = currentDate.getDay() - 1    // день недели (нумерация начинается с воскресенья)
+const dayOfWeek = currentDate.getDay() - 1    // день недели (нумерация начинается с воскресенья)
 console.log(`День недели: ${dayOfWeek}`)
-let daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
+const daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
 console.log(`День недели: ${daysOfWeek[dayOfWeek]}`)
 
 currentDate.setFullYear(year + 1)   // следующий год
