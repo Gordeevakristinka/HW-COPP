@@ -7,7 +7,7 @@ console.log('*** 1 ***')
 До ближайшего целого числа.
 Выведите все три результата в консоль.*/
 
-let number = 7.3
+const number = 7.3
 
 // Округление
 const roundedUp = Math.ceil(number)      // в большую сторону
