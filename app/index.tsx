@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity} from "react-native";
 
 export default function HomeScreen() {
   const handlePressButton = () => {
-    console.log('Button pressed')
+    console.log('Button pressed!!!')
   }
     
   return (
